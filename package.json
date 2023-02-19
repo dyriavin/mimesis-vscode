@@ -1,0 +1,21 @@
+{
+  "name": "mimesis",
+  "displayName": "mimesis",
+  "description": "Light color scheme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Mimesis",
+        "uiTheme": "vs",
+        "path": "./themes/Mimesis-color-theme.json"
+      }
+    ]
+  }
+}
