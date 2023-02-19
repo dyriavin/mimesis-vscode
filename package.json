@@ -1,11 +1,46 @@
 {
   "name": "mimesis",
   "displayName": "mimesis",
-  "description": "Light color scheme",
-  "version": "0.0.1",
+  "description": "Light color scheme inspired by great color schemes like One Light, Atom One Light, Material Lighter, etc.",
+  "version": "1.0.0",
+  "publisher": "AlexanderDyriavin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dyriavin/mimesis-vscode"
+  },
   "engines": {
     "vscode": "^1.75.0"
   },
+  "keywords": [
+    "themes",
+    "color-schemes",
+    "vscode",
+    "light",
+    "color scheme",
+    "light theme for vscode",
+    "minimalistic",
+    "minimalistic theme",
+    "minimalistic color scheme",
+    "minimalistic theme for vscode",
+    "bright",
+    "bright theme",
+    "bright theme for vscode",
+    "clean",
+    "clean theme",
+    "clean theme for vscode",
+    "clean color scheme",
+    "clean color scheme for vscode",
+    "light theme",
+    "simple",
+    "simple theme",
+    "simple theme for vscode",
+    "simple color scheme",
+    "simple color scheme for vscode",
+    "light color scheme",
+    "light color scheme for vscode",
+    "light theme",
+    "light theme for vscode"
+  ],
   "categories": [
     "Themes"
   ],
