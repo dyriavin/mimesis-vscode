@@ -189,7 +189,8 @@
 		  "storage.type.class.jsdoc"
 		],
 		"settings": {
-		  "foreground": "#777777",
+		  "foreground": "#454545",
+		  "background": "#FFFBF2",
 		  "fontStyle": "italic"
 		}
 	  },
@@ -302,7 +303,9 @@
 		  "keyword.operator.arrow.fat.rust",
 		  "keyword.operator.borrow.and.rust",
 		  "keyword.operator.arrow.skinny.rust",
-		  "keyword.operator.increment-decrement"
+		  "keyword.operator.increment-decrement",
+		  "entity.other.attribute-name.pseudo-element.css",
+		  "entity.other.attribute-name.pseudo-class.css"
 		],
 		"settings": {
 		  "foreground": "#b5007f"
@@ -313,10 +316,11 @@
 		  "storage",
 		  "keyword",
 		  "storage.type",
+		  "entity.name.tag.css",
 		  "support.variable.js",
 		  "variable.language.this.js",
 		  "entity.other.attribute-name",
-		  "support.type.object.module.js"
+		  "support.type.object.module.js",
 		],
 		"settings": {
 		  "foreground": "#0a84ff"
