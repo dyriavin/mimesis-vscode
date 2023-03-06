@@ -5,9 +5,7 @@ Color scheme for Visual Studio Code (VSCode) is a light theme that offers a clea
 
 
 
-It features a combination of minimal and vibrant colors, including shades of blue, magenta, green, and gray. 
-The theme provides good contrast between the background and text, making it easy to read and navigate through code. 
-It also supports a variety of file types, including :
+It features a combination of minimal and vibrant colors, including shades of blue, magenta, green, and gray. The theme provides good contrast between the background and text, making it easy to read and navigate through code. It also supports a variety of file types, including :
 - JavaScript
 - HTML/CSS
 - Python
