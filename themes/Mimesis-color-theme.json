@@ -187,7 +187,7 @@
         "comment",
         "string.comment",
         "storage.type.class.jsdoc",
-        "punctuation.definition.comment",
+        "punctuation.definition.comment"
       ],
       "settings": {
         "foreground": "#6B757B",
@@ -390,6 +390,7 @@
     {
       "name": "Numbers - Global",
       "scope": [
+        "keyword.other.unit.hexadecimal.go",
         "constant.numeric.integer",
         "constant.numeric.decimal",
         "constant.numeric.hex",
@@ -556,7 +557,12 @@
     },
     {
       "name": "This - JS",
-      "scope": ["variable.language.this.js", "constant.language.undefined.js"],
+      "scope": [
+        "variable.language.this.js",
+        "constant.language.undefined.js",
+        "constant.language.boolean.false.js",
+        "constant.language.boolean.true.js"
+      ],
       "settings": {
         "foreground": "#0060DF"
       }
