@@ -187,6 +187,7 @@
         "comment",
         "string.comment",
         "storage.type.class.jsdoc",
+        "punctuation.definition.block.tag.jsdoc",
         "punctuation.definition.comment"
       ],
       "settings": {
@@ -203,7 +204,12 @@
     },
     {
       "name": "Function - Global",
-      "scope": ["entity.name.function", "support.function"],
+      "scope": [
+        "entity.name.function",
+        "support.function",
+        "support.function.builtin.python",
+        "meta.function-call.generic.python"
+      ],
       "settings": {
         "foreground": "#006504"
       }
@@ -221,6 +227,11 @@
         "keyword.operator.class.php",
         "keyword.operator.logical.js",
         "punctuation.separator.delimiter.php",
+        "punctuation.separator.annotation.result.python",
+        "punctuation.definition.arguments.end.python",
+        "punctuation.definition.arguments.begin.python",
+        "punctuation.definition.dict.end.python",
+        "punctuation.definition.dict.begin.python",
         "keyword.operator.return-value.php",
         "keyword.operator.increment-decrement",
         "entity.other.attribute-name.pseudo-element.css",
@@ -321,6 +332,7 @@
       "name": "Classes - PHP",
       "scope": [
         "entity.name.type.class.php",
+        "support.class.builtin.php",
         "support.other.namespace",
         "entity.name.type.namespace",
         "support.class.php",
@@ -560,6 +572,7 @@
       "scope": [
         "variable.language.this.js",
         "constant.language.undefined.js",
+        "constant.language.null.js",
         "constant.language.boolean.false.js",
         "constant.language.boolean.true.js"
       ],
@@ -582,7 +595,7 @@
         "entity.name.type.js",
         "support.class.promise.js",
         "new.expr.js entity.name.function.js",
-        "entity.name.type.class",
+        "entity.name.type.class.js",
         "meta.function.expression.js variable.other.js"
       ],
       "settings": {
