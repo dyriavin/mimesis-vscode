@@ -237,7 +237,9 @@
         "keyword.operator.return-value.php",
         "keyword.operator.increment-decrement",
         "entity.other.attribute-name.pseudo-element.css",
-        "entity.other.attribute-name.pseudo-class.css"
+        "entity.other.attribute-name.pseudo-class.css",
+        "punctuation.definition.binding-pattern.object.js",
+        "punctuation.definition.binding-pattern.array.js"
       ],
       "settings": {
         "foreground": "#b5007f"
@@ -338,6 +340,7 @@
       "name": "Classes - PHP",
       "scope": [
         "entity.name.type.class.php",
+        "support.class.exception.php",
         "support.class.builtin.php",
         "support.other.namespace",
         "entity.name.type.namespace",
@@ -415,7 +418,8 @@
         "constant.numeric.decimal",
         "constant.numeric.hex",
         "constant.numeric.css",
-        "constant.numeric.dec"
+        "constant.numeric.dec",
+        "constant.numeric.hex.js"
       ],
       "settings": {
         "foreground": "#293338"
@@ -539,6 +543,7 @@
       "name": "Entity name - Go",
       "scope": [
         "entity.alias.import.go",
+        "entity.name.import.go",
         "entity.name.package.go",
         "entity.name.type.go"
       ],
