@@ -2,7 +2,7 @@
   "name": "mimesis",
   "displayName": "mimesis",
   "description": "Light color scheme color scheme well-suited for those who prefer a light and minimalist design for their coding environment",
-  "version": "1.0.7",
+  "version": "1.1.1",
   "publisher": "AlexanderDyriavin",
   "icon" : "images/logo.png",
   "repository": {
@@ -48,9 +48,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Mimesis",
+        "label": "Mimesis Light",
         "uiTheme": "vs",
         "path": "./themes/Mimesis-color-theme.json"
+      },
+      {
+        "label": "Mimesis Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Mimesis-dark-color-theme.json"
       }
     ]
   }
