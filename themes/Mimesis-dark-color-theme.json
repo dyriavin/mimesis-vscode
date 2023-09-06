@@ -276,7 +276,13 @@
         "punctuation.section.method.end.bracket.curly.java",
         "punctuation.section.class.begin.bracket.curly.java",
         "punctuation.section.class.end.bracket.curly.java",
-        "punctuation.bracket.round.java"
+        "punctuation.bracket.round.java",
+        "punctuation.definition.binding-pattern.array.js",
+        "punctuation.definition.typeparameters.begin.ts",
+        "punctuation.definition.typeparameters.end.ts",
+        "keyword.operator.relational.ts",
+        "keyword.operator.ternary.ts",
+        "keyword.operator.type.ts"
       ],
       "settings": {
         "foreground": "#E354AF"
@@ -555,6 +561,7 @@
         "constant.language.boolean.true.js",
         "constant.language.boolean.false.ts",
         "constant.language.boolean.true.ts",
+        "support.type.builtin.ts",
         "constant.language.null.ts",
         "constant.language.undefined.ts"
       ],
@@ -745,7 +752,9 @@
       "scope": [
         "entity.name.type.module.ts",
         "entity.name.type.interface.ts",
-        "entity.name.type.enum.ts"
+        "entity.name.type.enum.ts",
+        "entity.name.type.class.ts",
+        "entity.name.type.ts",
       ],
       "settings": {
         "foreground": "#DB5860"
