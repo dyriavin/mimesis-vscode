@@ -239,7 +239,12 @@
         "entity.other.attribute-name.pseudo-element.css",
         "entity.other.attribute-name.pseudo-class.css",
         "punctuation.definition.binding-pattern.object.js",
-        "punctuation.definition.binding-pattern.array.js"
+        "punctuation.definition.binding-pattern.array.js",
+        "punctuation.definition.typeparameters.begin.ts",
+        "punctuation.definition.typeparameters.end.ts",
+        "keyword.operator.relational.ts",
+        "keyword.operator.ternary.ts",
+        "keyword.operator.type.ts"
       ],
       "settings": {
         "foreground": "#b5007f"
@@ -349,7 +354,8 @@
         "support.class.php",
         "constant.other.php",
         "entity.other.alias.php",
-        "entity.other.inherited-class.php"
+        "entity.other.inherited-class.php",
+        "entity.name.type.interface.php"
       ],
       "settings": {
         "foreground": "#D70022"
@@ -589,6 +595,7 @@
         "constant.language.boolean.false.js",
         "constant.language.boolean.true.js",
         "constant.language.boolean.false.ts",
+        "support.type.builtin.ts",
         "constant.language.boolean.true.ts",
         "constant.language.null.ts",
         "constant.language.undefined.ts"
@@ -779,6 +786,8 @@
       "name": "Entity - TS",
       "scope": [
         "entity.name.type.module.ts",
+        "entity.name.type.class.ts",
+        "entity.name.type.ts",
         "entity.name.type.interface.ts",
         "entity.name.type.enum.ts"
       ],
