@@ -372,7 +372,7 @@
       "name": "Class properties - PHP",
       "scope": ["variable.other.property.php"],
       "settings": {
-        "foreground": "#074382"
+        "foreground": "#440071"
       }
     },
     {
@@ -411,7 +411,11 @@
     },
     {
       "name": "Variables - PHP",
-      "scope": ["variable.other.php", "string.unquoted.argument.shell", "constant.other.option"],
+      "scope": [
+        "variable.other.php",
+        "string.unquoted.argument.shell",
+        "constant.other.option"
+      ],
       "settings": {
         "foreground": "#722291"
       }
@@ -541,7 +545,7 @@
     },
     {
       "name": "Storage type - Go",
-      "scope": ["storage.type.numeric.go","storage.type.string.go"],
+      "scope": ["storage.type.numeric.go", "storage.type.string.go"],
       "settings": {
         "foreground": "#D70022"
       }
@@ -607,8 +611,7 @@
         "constant.language.boolean.true.ts",
         "constant.language.null.ts",
         "constant.language.undefined.ts",
-        "constant.language.infinity.ts",
-    
+        "constant.language.infinity.ts"
       ],
       "settings": {
         "foreground": "#0060DF"
@@ -640,7 +643,7 @@
       "name": "Properties - JS",
       "scope": ["variable.other.property.js", "support.variable.property.js"],
       "settings": {
-        "foreground": "#074382"
+        "foreground": "#440071"
       }
     },
     {
@@ -661,7 +664,7 @@
       "name": "Properties - JSON",
       "scope": "support.type.property-name.json",
       "settings": {
-        "foreground": "#074382"
+        "foreground": "#440071"
       }
     },
     {
@@ -774,7 +777,7 @@
     },
     {
       "name": "This & Numeric - Rust",
-      "scope": ["variable.language.self.rust","string.quoted.byte.raw.rust"],
+      "scope": ["variable.language.self.rust", "string.quoted.byte.raw.rust"],
       "settings": {
         "foreground": "#0060DF"
       }
@@ -840,9 +843,9 @@
     },
     {
       "name": "Class TS",
-      "scope": ["variable.other.property.ts",],
+      "scope": ["variable.other.property.ts"],
       "settings": {
-        "foreground": "#074382"
+        "foreground": "#440071"
       }
     },
     {
