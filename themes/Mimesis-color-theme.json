@@ -199,7 +199,7 @@
       "name": "String - Global",
       "scope": ["string", "punctuation.definition.string"],
       "settings": {
-        "foreground": "#293338"
+        "foreground": "#454545"
       }
     },
     {
@@ -208,7 +208,8 @@
         "entity.name.function",
         "support.function",
         "support.function.builtin.python",
-        "meta.function-call.generic.python"
+        "meta.function-call.generic.python",
+        "punctuation.definition.arguments.shell"
       ],
       "settings": {
         "foreground": "#006504"
@@ -242,9 +243,15 @@
         "punctuation.definition.binding-pattern.array.js",
         "punctuation.definition.typeparameters.begin.ts",
         "punctuation.definition.typeparameters.end.ts",
+        "punctuation.definition.binding-pattern.array.ts",
+        "meta.property-name.scss",
+        "meta.property-list.scss",
+        "punctuation.accessor.optional.ts",
         "keyword.operator.relational.ts",
         "keyword.operator.ternary.ts",
-        "keyword.operator.type.ts"
+        "keyword.operator.type.ts",
+        "keyword.operator.optional.ts",
+        "keyword.operator.type.annotation.ts"
       ],
       "settings": {
         "foreground": "#b5007f"
@@ -404,7 +411,7 @@
     },
     {
       "name": "Variables - PHP",
-      "scope": ["variable.other.php"],
+      "scope": ["variable.other.php", "string.unquoted.argument.shell", "constant.other.option"],
       "settings": {
         "foreground": "#722291"
       }
@@ -425,10 +432,11 @@
         "constant.numeric.hex",
         "constant.numeric.css",
         "constant.numeric.dec",
-        "constant.numeric.hex.js"
+        "constant.numeric.hex.js",
+        "entity.name.type.numeric.rust"
       ],
       "settings": {
-        "foreground": "#293338"
+        "foreground": "#002275"
       }
     },
     {
@@ -533,7 +541,7 @@
     },
     {
       "name": "Storage type - Go",
-      "scope": "storage.type.numeric.go",
+      "scope": ["storage.type.numeric.go","storage.type.string.go"],
       "settings": {
         "foreground": "#D70022"
       }
@@ -598,7 +606,9 @@
         "support.type.builtin.ts",
         "constant.language.boolean.true.ts",
         "constant.language.null.ts",
-        "constant.language.undefined.ts"
+        "constant.language.undefined.ts",
+        "constant.language.infinity.ts",
+    
       ],
       "settings": {
         "foreground": "#0060DF"
@@ -752,7 +762,11 @@
         "entity.name.type.struct.rust",
         "entity.name.type.trait.rust",
         "entity.name.type.declaration.rust",
-        "entity.name.type.rust"
+        "entity.name.type.rust",
+        "entity.name.namespace.rust",
+        "entity.name.type.option.rust",
+        "entity.name.type.primitive.rust",
+        "constant.language.bool.rust"
       ],
       "settings": {
         "foreground": "#D70022"
@@ -760,7 +774,7 @@
     },
     {
       "name": "This & Numeric - Rust",
-      "scope": ["variable.language.self.rust", "entity.name.type.numeric.rust"],
+      "scope": ["variable.language.self.rust","string.quoted.byte.raw.rust"],
       "settings": {
         "foreground": "#0060DF"
       }
@@ -789,7 +803,10 @@
         "entity.name.type.class.ts",
         "entity.name.type.ts",
         "entity.name.type.interface.ts",
-        "entity.name.type.enum.ts"
+        "entity.name.type.enum.ts",
+        "variable.other.object.ts",
+        "entity.name.type.alias.ts",
+        "entity.other.inherited-class.ts"
       ],
       "settings": {
         "foreground": "#D70022"
@@ -819,6 +836,13 @@
       "scope": "support.type.primitive.ts",
       "settings": {
         "foreground": "#0060DF"
+      }
+    },
+    {
+      "name": "Class TS",
+      "scope": ["variable.other.property.ts",],
+      "settings": {
+        "foreground": "#074382"
       }
     },
     {
