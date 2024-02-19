@@ -140,16 +140,17 @@
         "support.function",
         "support.function",
         "support.function.builtin.python",
-        "meta.function-call.generic.python"
+        "meta.function-call.generic.python",
+        "punctuation.definition.arguments.shell"
       ],
       "settings": {
         "foreground": "#7ECC49"
       }
     },
     {
-      "scope": ["support.function","entity.name.function.js"],
+      "scope": ["support.function", "entity.name.function.js"],
       "settings": {
-        "fontStyle": "normal",
+        "fontStyle": "normal"
       }
     },
     {
@@ -192,7 +193,7 @@
         "entity.other.attribute-name",
         "keyword.control",
         "keyword.other",
-        "keyword.operator.logical.python",
+        "keyword.operator.logical.python"
       ],
       "settings": {
         "foreground": "#63B0FF"
@@ -282,7 +283,14 @@
         "punctuation.definition.typeparameters.end.ts",
         "keyword.operator.relational.ts",
         "keyword.operator.ternary.ts",
-        "keyword.operator.type.ts"
+        "keyword.operator.type.ts",
+        "punctuation.definition.binding-pattern.array.ts",
+        "meta.property-name.scss",
+        "meta.property-list.scss",
+        "punctuation.accessor.optional.ts",
+        "keyword.operator.type.ts",
+        "keyword.operator.optional.ts",
+        "keyword.operator.type.annotation.ts"
       ],
       "settings": {
         "foreground": "#E354AF"
@@ -359,9 +367,13 @@
     },
     {
       "name": "Variables - PHP",
-      "scope": ["variable.other.php"],
+      "scope": [
+        "variable.other.php",
+        "string.unquoted.argument.shell",
+        "constant.other.option"
+      ],
       "settings": {
-        "foreground": "#BF80D9"
+        "foreground": "#b28fb2"
       }
     },
     {
@@ -381,10 +393,11 @@
         "constant.numeric.css",
         "constant.numeric.dec",
         "constant.numeric.hex.js",
-        "constant.numeric"
+        "constant.numeric",
+        "entity.name.type.numeric.rust"
       ],
       "settings": {
-        "foreground": "#E9ECEC"
+        "foreground": "#88adf7"
       }
     },
     {
@@ -482,8 +495,8 @@
     },
     {
       "name": "Constants - Go",
-    
-      "scope": ["variable.other.constant","constant.language.go"],
+
+      "scope": ["variable.other.constant", "constant.language.go"],
       "settings": {
         "foreground": "#21A793",
         "fontStyle": "bold italic"
@@ -498,7 +511,7 @@
     },
     {
       "name": "Storage type - Go",
-      "scope": "storage.type.numeric.go",
+      "scope": ["storage.type.numeric.go", "storage.type.string.go"],
       "settings": {
         "foreground": "#DB5860"
       }
@@ -563,7 +576,8 @@
         "constant.language.boolean.true.ts",
         "support.type.builtin.ts",
         "constant.language.null.ts",
-        "constant.language.undefined.ts"
+        "constant.language.undefined.ts",
+        "constant.language.infinity.ts"
       ],
       "settings": {
         "foreground": "#63B0FF"
@@ -717,7 +731,11 @@
         "entity.name.type.struct.rust",
         "entity.name.type.trait.rust",
         "entity.name.type.declaration.rust",
-        "entity.name.type.rust"
+        "entity.name.type.rust",
+        "entity.name.namespace.rust",
+        "entity.name.type.option.rust",
+        "entity.name.type.primitive.rust",
+        "constant.language.bool.rust"
       ],
       "settings": {
         "foreground": "#DB5860"
@@ -725,7 +743,11 @@
     },
     {
       "name": "This & Numeric - Rust",
-      "scope": ["variable.language.self.rust", "entity.name.type.numeric.rust"],
+      "scope": [
+        "variable.language.self.rust",
+        "entity.name.type.numeric.rust",
+        "string.quoted.byte.raw.rust"
+      ],
       "settings": {
         "foreground": "#63B0FF"
       }
@@ -755,9 +777,19 @@
         "entity.name.type.enum.ts",
         "entity.name.type.class.ts",
         "entity.name.type.ts",
+        "variable.other.object.ts",
+        "entity.name.type.alias.ts",
+        "entity.other.inherited-class.ts"
       ],
       "settings": {
         "foreground": "#DB5860"
+      }
+    },
+    {
+      "name": "Class TS",
+      "scope": ["variable.other.property.ts"],
+      "settings": {
+        "foreground": "#b28fb2"
       }
     },
     {
