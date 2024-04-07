@@ -116,13 +116,32 @@
       "scope": [
         "comment",
         "string.comment",
-        "storage.type.class.jsdoc",
+
         "punctuation.definition.block.tag.jsdoc",
-        "punctuation.definition.comment"
+        "punctuation.definition.comment",
+        "comment.line.double-slash.ts"
       ],
       "settings": {
-        "foreground": "#ADADAD",
+        "foreground": "#F8E7CC",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Doc storage",
+      "scope": [
+        "storage.type.class.jsdoc",
+        "punctuation.definition.block.tag.jsdoc"
+      ],
+      "settings": {
+        "foreground": "#999900"
+      }
+    },
+    {
+      "name": "Doc type",
+      "scope": ["entity.name.type.instance.jsdoc", "variable.other.jsdoc"],
+      "settings": {
+        "foreground": "#F2B3FF",
+        "fontStyle": "bold"
       }
     },
     {
@@ -141,10 +160,12 @@
         "support.function",
         "support.function.builtin.python",
         "meta.function-call.generic.python",
-        "punctuation.definition.arguments.shell"
+        "punctuation.definition.arguments.shell",
+        "entity.name.function.ts"
       ],
       "settings": {
-        "foreground": "#7ECC49"
+        "foreground": "#7ECC49",
+        "fontStyle": "italic"
       }
     },
     {
@@ -180,10 +201,43 @@
         "entity.other.attribute-name.pseudo-class.css",
         "punctuation.definition.binding-pattern.object.js",
         "punctuation.definition.binding-pattern.array.js",
-        "punctuation.definition"
+        "punctuation.definition",
+        "keyword.operator.borrow.and.rust",
+        "keyword.operator.question.rust"
       ],
       "settings": {
         "foreground": "#E354AF"
+      }
+    },
+    {
+      "name": "Meta variable - Rust",
+      "scope": "variable.other.metavariable.name.rust",
+      "settings": {
+        "foreground": "#7ECC49",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Enum variant - Rust",
+      "scope": "entity.name.type.option.rust",
+      "settings": {
+        "foreground": "#032F62"
+      }
+    },
+    {
+      "name": "Meta specifier - Rust",
+      "scope": "variable.other.metavariable.specifier.rust",
+      "settings": {
+        "foreground": "#DB5860",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Paramaters - Rust",
+      "scope": ["variable.other.rust", "variable.parameter.function.rust"],
+      "settings": {
+        "foreground": "#FE94ED",
+        "fontStyle": "italic"
       }
     },
     {
@@ -193,7 +247,8 @@
         "entity.other.attribute-name",
         "keyword.control",
         "keyword.other",
-        "keyword.operator.logical.python"
+        "keyword.operator.logical.python",
+        "keyword.operator.new.js"
       ],
       "settings": {
         "foreground": "#63B0FF"
@@ -317,10 +372,19 @@
         "constant.other.php",
         "entity.other.alias.php",
         "entity.other.inherited-class.php",
-        "entity.name.type.interface.php"
+        "entity.name.type.interface.php",
+        "support.function.file.php"
       ],
       "settings": {
         "foreground": "#DB5860"
+      }
+    },
+    {
+      "name": "Heredoc - PHP",
+      "scope": ["keyword.operator.heredoc.php", "string.unquoted.heredoc.php"],
+      "settings": {
+        "foreground": "#F3FFF2",
+        "fontStyle": "underline"
       }
     },
     {
@@ -337,11 +401,27 @@
         "meta.class.php constant",
         "entity.name.type.option.rust",
         "constant.language.python",
-        "constant.other.class.php"
+        "constant.other.class.php",
+        "constant.language.php"
       ],
       "settings": {
         "foreground": "#51C9B7",
-        "fontStyle": "bold"
+        "fontStyle": "italic underline bold"
+      }
+    },
+    {
+      "name": "Embedded - PHP",
+      "scope": ["meta.embedded.block.php constant.other.php"],
+      "settings": {
+        "foreground": "#63B0FF",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Doc block - PHP",
+      "scope": ["keyword.other.php, doc.php"],
+      "settings": {
+        "foreground": "#999900"
       }
     },
     {
@@ -370,15 +450,28 @@
       "scope": [
         "variable.other.php",
         "string.unquoted.argument.shell",
-        "constant.other.option"
+        "punctuation.definition.variable.php",
+        "constant.other.option",
+        "variable.language.this.php"
       ],
       "settings": {
-        "foreground": "#b28fb2"
+        "foreground": "#81C8E1"
+      }
+    },
+    {
+      "name": "Variable class - PHP",
+      "scope": ["variable.other.class.php"],
+      "settings": {
+        "foreground": "#99C0E8"
       }
     },
     {
       "name": "Punctuations - PHP",
-      "scope": "punctuation.section.embedded.begin.php",
+      "scope": [
+        "punctuation.section.embedded.begin.php",
+        "support.function.construct.php",
+        "support.function.construct.output.php"
+      ],
       "settings": {
         "foreground": "#63B0FF"
       }
@@ -397,14 +490,15 @@
         "entity.name.type.numeric.rust"
       ],
       "settings": {
-        "foreground": "#88adf7"
+        "foreground": "#FAF7D7"
       }
     },
     {
       "name": "Meta attributes - PHP",
       "scope": ["support.attribute.builtin.php", "meta.attribute.php"],
       "settings": {
-        "foreground": "#51C9B7"
+        "foreground": "#81C8E1",
+        "fontStyle": "italic"
       }
     },
     {
@@ -434,8 +528,17 @@
       "name": "Named Attribute - PHP",
       "scope": ["entity.name.variable.parameter.php"],
       "settings": {
-        "foreground": "#E9ECEC",
-        "fontStyle": "underline"
+        "foreground": "#E9ECEC"
+      }
+    },
+    {
+      "name": "Parameters - PHP",
+      "scope": [
+        "meta.function.parameter.no-default.php variable.other.php",
+        "meta.function.parameters.php variable.other.php"
+      ],
+      "settings": {
+        "foreground": "#FE94ED"
       }
     },
     {
@@ -495,8 +598,7 @@
     },
     {
       "name": "Constants - Go",
-
-      "scope": ["variable.other.constant", "constant.language.go"],
+      "scope": ["constant.language.go"],
       "settings": {
         "foreground": "#21A793",
         "fontStyle": "bold italic"
@@ -543,11 +645,23 @@
       }
     },
     {
+      "name": "Static declaration - TS",
+      "scope": ["meta.object-literal.key.ts entity.name.function.ts"],
+      "settings": {
+        "foreground": "#FF0000",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
       "name": "Decorator - Global",
-      "scope": ["meta.decorator entity.name.function"],
+      "scope": [
+        "meta.decorator entity.name.function",
+        "meta.decorator entity.name.function.ts",
+        "punctuation.decorator.ts"
+      ],
       "settings": {
         "foreground": "#81C8E1",
-        "fontStyle": "bold"
+        "fontStyle": "italic bold"
       }
     },
     {
@@ -559,7 +673,7 @@
     },
     {
       "name": "Variable - Global",
-      "scope": ["variable", "constant.language.infinity.js"],
+      "scope": ["constant.language.infinity.js"],
       "settings": {
         "foreground": "#BF80D9"
       }
@@ -577,10 +691,63 @@
         "support.type.builtin.ts",
         "constant.language.null.ts",
         "constant.language.undefined.ts",
-        "constant.language.infinity.ts"
+        "constant.language.infinity.ts",
+        "keyword.operator.expression.typeof.js"
       ],
       "settings": {
         "foreground": "#63B0FF"
+      }
+    },
+    {
+      "name": "Paramaters - JS",
+      "scope": [
+        "variable.parameter.js",
+        "variable.other.object.js",
+        "entity.other.inherited-class"
+      ],
+      "settings": {
+        "foreground": "#FE94ED",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Decorator - JS",
+      "scope": [
+        "meta.decorator.js",
+        "meta.decorator.js entity.name.function.js"
+      ],
+      "settings": {
+        "foreground": "#81C8E1",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Inherited class - JS ",
+      "scope": "entity.other.inherited-class.js",
+      "settings": {
+        "foreground": "#C77DBA",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Local variable - js",
+      "scope": [
+        "meta.definition.variable.js",
+        "meta.object-binding-pattern-variable.js",
+        "variable.other.readwrite.js",
+        "variable.object.property.js",
+        "variable.other.object.property.js"
+      ],
+      "settings": {
+        "foreground": "#81C8E1"
+      }
+    },
+    {
+      "name": "Label - JS",
+      "scope": "entity.name.label.js",
+      "settings": {
+        "foreground": "#F3FFF2",
+        "fontStyle": "underline"
       }
     },
     {
@@ -718,7 +885,7 @@
       "scope": "constant.other.caps.rust",
       "settings": {
         "foreground": "#7ECC49",
-        "fontStyle": "bold"
+        "fontStyle": "italic bold underline"
       }
     },
     {
@@ -732,10 +899,9 @@
         "entity.name.type.trait.rust",
         "entity.name.type.declaration.rust",
         "entity.name.type.rust",
-        "entity.name.namespace.rust",
-        "entity.name.type.option.rust",
         "entity.name.type.primitive.rust",
-        "constant.language.bool.rust"
+        "constant.language.bool.rust",
+        "entity.name.function.macro.rust",
       ],
       "settings": {
         "foreground": "#DB5860"
@@ -777,26 +943,75 @@
         "entity.name.type.enum.ts",
         "entity.name.type.class.ts",
         "entity.name.type.ts",
-        "variable.other.object.ts",
         "entity.name.type.alias.ts",
-        "entity.other.inherited-class.ts"
+        "support.class.promise.ts",
+        "new.expr.ts entity.name.function.ts",
+        "variable.other.object.ts"
       ],
       "settings": {
         "foreground": "#DB5860"
       }
     },
     {
-      "name": "Class TS",
-      "scope": ["variable.other.property.ts"],
+      "name": "Label - TS",
+      "scope": "entity.name.label.ts",
       "settings": {
-        "foreground": "#b28fb2"
+        "foreground": "#F3FFF2",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Keyword - TS",
+      "scope": [
+        "keyword.operator.expression.typeof.ts",
+        "variable.language.this.ts",
+        "keyword.operator.new.ts"
+      ],
+      "settings": {
+        "foreground": "#63B0FF"
+      }
+    },
+    {
+      "name": "Inherited class - Ts",
+      "scope": "entity.other.inherited-class.ts",
+      "settings": {
+        "foreground": "#C77DBA",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Paramaters TS",
+      "scope": "variable.parameter.ts",
+      "settings": {
+        "foreground": "#FE94ED",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Local variables - TS",
+      "scope": [
+        "variable.other.readwrite.ts",
+      ],
+      "settings": {
+        "foreground": "#81C8E1"
+      }
+    },
+    {
+      "name": "Class TS",
+      "scope": [
+        "variable.other.property.ts",
+        "variable.object.property",
+        "meta.object-literal.key.ts"
+      ],
+      "settings": {
+        "foreground": "#99C0E8"
       }
     },
     {
       "name": "Enum member - Global",
       "scope": "variable.other.enummember",
       "settings": {
-        "foreground": "#81C8E1"
+        "foreground": "#99C0E8"
       }
     },
     {
@@ -813,9 +1028,16 @@
     },
     {
       "name": "Primitive - TS",
-      "scope": "support.type.primitive.ts",
+      "scope": ["support.type.primitive.ts"],
       "settings": {
         "foreground": "#63B0FF"
+      }
+    },
+    {
+      "name": "Object property - TS",
+      "scope": "variable.object.property.ts",
+      "settings": {
+        "foreground": "#99C0E8"
       }
     },
     {
