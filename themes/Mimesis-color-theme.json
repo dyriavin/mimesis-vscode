@@ -191,7 +191,8 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#6B757B",
+        "foreground": "#003706",
+        "background": "#FFFBF2",
         "fontStyle": "italic"
       }
     },
@@ -199,7 +200,7 @@
       "name": "String - Global",
       "scope": ["string", "punctuation.definition.string"],
       "settings": {
-        "foreground": "#454545"
+        "foreground": "#2A3434"
       }
     },
     {
@@ -244,6 +245,7 @@
         "punctuation.definition.typeparameters.begin.ts",
         "punctuation.definition.typeparameters.end.ts",
         "punctuation.definition.binding-pattern.array.ts",
+        "punctuation.definition.binding-pattern.object.ts",
         "meta.property-name.scss",
         "meta.property-list.scss",
         "punctuation.accessor.optional.ts",
@@ -251,7 +253,10 @@
         "keyword.operator.ternary.ts",
         "keyword.operator.type.ts",
         "keyword.operator.optional.ts",
-        "keyword.operator.type.annotation.ts"
+        "keyword.operator.type.annotation.ts",
+        "keyword.operator.dereference.rust",
+        "keyword.operator.borrow.and.rust",
+        "keyword.operator.question.rust"
       ],
       "settings": {
         "foreground": "#b5007f"
@@ -376,16 +381,62 @@
       }
     },
     {
+      "name": "Heredoc - PHP",
+      "scope": ["keyword.operator.heredoc.php", "string.unquoted.heredoc.php"],
+      "settings": {
+        "foreground": "#363959",
+        "fontStyle": "italic underline"
+      }
+    },
+    {
+      "name": "templated php test",
+      "scope": ["meta.embedded.block.php constant.other.php"],
+      "settings": {
+        "foreground": "#0060DF",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Variable class - PHP",
+      "scope": ["variable.other.class.php"],
+      "settings": {
+        "foreground": "#032F62"
+      }
+    },
+    {
+      "name": "Variables - PHP",
+      "scope": [
+        "variable.other.php",
+        "string.unquoted.argument.shell",
+        "constant.other.option",
+        "variable.language.this.php"
+      ],
+      "settings": {
+        "foreground": "#002275"
+      }
+    },
+    {
+      "name": "Parameters - PHP",
+      "scope": [
+        "meta.function.parameter.no-default.php variable.other.php",
+        "meta.function.parameters.php variable.other.php"
+      ],
+      "settings": {
+        "foreground": "#7D004F"
+      }
+    },
+    {
       "name": "Constants - Global",
       "scope": [
         "meta.class.body.php constant.other.php",
         "meta.class.php constant",
         "constant.language.python",
-        "constant.other.class.php"
+        "constant.other.class.php",
+        "constant.language.php"
       ],
       "settings": {
         "foreground": "#006504",
-        "fontStyle": "bold"
+        "fontStyle": "italic bold"
       }
     },
     {
@@ -409,17 +460,7 @@
         "foreground": "#D70022"
       }
     },
-    {
-      "name": "Variables - PHP",
-      "scope": [
-        "variable.other.php",
-        "string.unquoted.argument.shell",
-        "constant.other.option"
-      ],
-      "settings": {
-        "foreground": "#722291"
-      }
-    },
+
     {
       "name": "Punctuations - PHP",
       "scope": "punctuation.section.embedded.begin.php",
@@ -440,14 +481,15 @@
         "entity.name.type.numeric.rust"
       ],
       "settings": {
-        "foreground": "#002275"
+        "foreground": "#000F40"
       }
     },
     {
       "name": "Meta attributes - PHP",
       "scope": ["support.attribute.builtin.php", "meta.attribute.php"],
       "settings": {
-        "foreground": "#008EA4"
+        "foreground": "#005A71",
+        "fontStyle": "italic bold"
       }
     },
     {
@@ -540,23 +582,52 @@
       "name": "Constants - Go",
       "scope": ["constant.language.go"],
       "settings": {
-        "foreground": "#006504"
+        "foreground": "#7D004F",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "package name - Go",
+      "scope": "entity.name.type.package.go",
+      "settings": {
+        "foreground": "#D70022"
       }
     },
     {
       "name": "Storage type - Go",
-      "scope": ["storage.type.numeric.go", "storage.type.string.go"],
+      "scope": [
+        "storage.type.numeric.go",
+        "storage.type.string.go",
+        "storage.type.error.go"
+      ],
       "settings": {
         "foreground": "#D70022"
       }
     },
     {
       "name": "Variables - Go",
-      "scope": "variable.other.assignment.go",
+      "scope": ["variable.other.assignment.go", "variable.parameter.go"],
       "settings": {
-        "foreground": "#722291"
+        "foreground": "#002275"
       }
     },
+    {
+      "name": "Variable other- GO",
+      "scope": "variable.other.go",
+      "settings": {
+        "foreground": "#7D004F",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Label - Go",
+      "scope": "variable.other.label.go",
+      "settings": {
+        "foreground": "#363959",
+        "fontStyle": "underline"
+      }
+    },
+
     {
       "name": "Entity name - Go",
       "scope": [
@@ -580,8 +651,8 @@
       "name": "Decorator - Global",
       "scope": ["meta.decorator entity.name.function"],
       "settings": {
-        "foreground": "#008EA4",
-        "fontStyle": "bold"
+        "foreground": "#005A71",
+        "fontStyle": "italic bold"
       }
     },
     {
@@ -593,9 +664,50 @@
     },
     {
       "name": "Variable - Global",
-      "scope": ["variable", "constant.language.infinity.js"],
+      "scope": ["constant.language.infinity.js"],
       "settings": {
         "foreground": "#722291"
+      }
+    },
+    {
+      "name": "Label - js",
+      "scope": "entity.name.label.js",
+      "settings": {
+        "foreground": "#363959",
+        "fontStyle": "italic underline"
+      }
+    },
+    {
+      "name": "Static method - js ",
+      "scope": "entity.name.function.js",
+      "settings": {
+        "foreground": "#006504",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Local variable - js",
+      "scope": [
+        "meta.definition.variable.js",
+        "meta.object-binding-pattern-variable.js",
+        "variable.other.readwrite.js",
+        "variable.object.property.js",
+        "variable.other.object.property.js"
+      ],
+      "settings": {
+        "foreground": "#002275"
+      }
+    },
+    {
+      "name": "Paramaters - JS",
+      "scope": [
+        "variable.parameter.js",
+        "variable.other.object.js",
+        "entity.other.inherited-class"
+      ],
+      "settings": {
+        "foreground": "#7D004F",
+        "fontStyle": "italic"
       }
     },
     {
@@ -643,7 +755,7 @@
       "name": "Properties - JS",
       "scope": ["variable.other.property.js", "support.variable.property.js"],
       "settings": {
-        "foreground": "#440071"
+        "foreground": "#032F62"
       }
     },
     {
@@ -743,8 +855,16 @@
       "name": "Meta attribute - Rust",
       "scope": ["meta.attribute.rust"],
       "settings": {
-        "foreground": "#008EA4",
-        "fontStyle": "bold"
+        "foreground": "#005A71",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Paramaters - Rust",
+      "scope": ["variable.other.rust", "variable.parameter.function.rust"],
+      "settings": {
+        "foreground": "#7D004F",
+        "fontStyle": "italic"
       }
     },
     {
@@ -752,7 +872,7 @@
       "scope": "constant.other.caps.rust",
       "settings": {
         "foreground": "#006504",
-        "fontStyle": "bold"
+        "fontStyle": "underline italic bold"
       }
     },
     {
@@ -766,18 +886,44 @@
         "entity.name.type.trait.rust",
         "entity.name.type.declaration.rust",
         "entity.name.type.rust",
-        "entity.name.namespace.rust",
-        "entity.name.type.option.rust",
         "entity.name.type.primitive.rust",
-        "constant.language.bool.rust"
+        "entity.name.function.macro.rust",
+        "entity.name.type.lifetime.rust"
       ],
       "settings": {
         "foreground": "#D70022"
       }
     },
     {
+      "name": "Enum variant - Rust",
+      "scope": "entity.name.type.option.rust",
+      "settings": {
+        "foreground": "#032F62"
+      }
+    },
+    {
+      "name": "Meta variable - Rust",
+      "scope": "variable.other.metavariable.name.rust",
+      "settings": {
+        "foreground": "#006504",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Meta specifier - Rust",
+      "scope": "variable.other.metavariable.specifier.rust",
+      "settings": {
+        "foreground": "#D70022",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "name": "This & Numeric - Rust",
-      "scope": ["variable.language.self.rust", "string.quoted.byte.raw.rust"],
+      "scope": [
+        "variable.language.self.rust",
+        "string.quoted.byte.raw.rust",
+        "constant.language.bool.rust"
+      ],
       "settings": {
         "foreground": "#0060DF"
       }
@@ -809,7 +955,10 @@
         "entity.name.type.enum.ts",
         "variable.other.object.ts",
         "entity.name.type.alias.ts",
-        "entity.other.inherited-class.ts"
+        "entity.other.inherited-class.ts",
+        "support.class.promise.ts",
+        "meta.indexed-name.python",
+        "new.expr.ts entity.name.function.ts",
       ],
       "settings": {
         "foreground": "#D70022"
@@ -836,18 +985,45 @@
     },
     {
       "name": "Primitive - TS",
-      "scope": "support.type.primitive.ts",
+      "scope": ["support.type.primitive.ts", "variable.language.this.ts"],
       "settings": {
         "foreground": "#0060DF"
       }
     },
     {
       "name": "Class TS",
-      "scope": ["variable.other.property.ts"],
+      "scope": [
+        "variable.other.property.ts",
+        "variable.other.enummember",
+        "variable.other.constant.property.ts"
+      ],
       "settings": {
-        "foreground": "#440071"
+        "foreground": "#032F62"
       }
     },
+    {
+      "name": "Local variable - TS",
+      "scope": "variable.other.readwrite.ts",
+      "settings": {
+        "foreground": "#002275"
+      }
+    },
+    {
+      "name": "Paramaters - Ts",
+      "scope": ["variable.parameter.ts"],
+      "settings": {
+        "foreground": "#7D004F",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Global variable - TS",
+      "scope": "entity.other.inherited-class.ts",
+      "settings": {
+        "foreground": "#7D004F"
+      }
+    },
+
     {
       "name": "Support type - Python",
       "scope": [
@@ -856,6 +1032,22 @@
       ],
       "settings": {
         "foreground": "#008EA4"
+      }
+    },
+    {
+      "name": "Self - python",
+      "scope": "variable.parameter.function.language.special.self.python",
+      "settings": {
+        "foreground": "#006504",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Comments - Python",
+      "scope": "string.quoted.docstring.multi.python",
+      "settings": {
+        "foreground": "#737373",
+        "fontStyle": "italic"
       }
     },
     {
@@ -909,8 +1101,8 @@
       "name": "Type Annotation - Java",
       "scope": "storage.type.annotation.java",
       "settings": {
-        "foreground": "#008EA4",
-        "fontStyle": "bold"
+        "foreground": "#005A71",
+        "fontStyle": "italic bold"
       }
     },
     {
@@ -932,10 +1124,35 @@
       }
     },
     {
-      "name": "Parameter - Java",
-      "scope": ["variable.parameter.java", "variable.other.definition.java"],
+      "name": "Object property - Java",
+      "scope": [
+        "variable.other.object.property.java",
+        "constant.other.enum.java"
+      ],
       "settings": {
-        "foreground": "#722291"
+        "foreground": "#032F62"
+      }
+    },
+    {
+      "name": "Variable - Java",
+      "scope": "variable.other.definition.java",
+      "settings": {
+        "foreground": "#7D004F"
+      }
+    },
+    {
+      "name": "Paramaters - Java",
+      "scope": "variable.parameter.java",
+      "settings": {
+        "foreground": "#7D004F",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Parameter - Java",
+      "scope": ["variable.parameter.java"],
+      "settings": {
+        "foreground": "#032F62"
       }
     },
     {
