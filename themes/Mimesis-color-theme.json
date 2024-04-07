@@ -782,7 +782,7 @@
       "name": "Properties - JSON",
       "scope": "support.type.property-name.json",
       "settings": {
-        "foreground": "#440071"
+        "foreground": "#032F62"
       }
     },
     {
