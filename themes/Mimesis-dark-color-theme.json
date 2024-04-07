@@ -201,10 +201,43 @@
         "entity.other.attribute-name.pseudo-class.css",
         "punctuation.definition.binding-pattern.object.js",
         "punctuation.definition.binding-pattern.array.js",
-        "punctuation.definition"
+        "punctuation.definition",
+        "keyword.operator.borrow.and.rust",
+        "keyword.operator.question.rust"
       ],
       "settings": {
         "foreground": "#E354AF"
+      }
+    },
+    {
+      "name": "Meta variable - Rust",
+      "scope": "variable.other.metavariable.name.rust",
+      "settings": {
+        "foreground": "#7ECC49",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
+      "name": "Enum variant - Rust",
+      "scope": "entity.name.type.option.rust",
+      "settings": {
+        "foreground": "#032F62"
+      }
+    },
+    {
+      "name": "Meta specifier - Rust",
+      "scope": "variable.other.metavariable.specifier.rust",
+      "settings": {
+        "foreground": "#DB5860",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Paramaters - Rust",
+      "scope": ["variable.other.rust", "variable.parameter.function.rust"],
+      "settings": {
+        "foreground": "#FE94ED",
+        "fontStyle": "italic"
       }
     },
     {
@@ -214,7 +247,8 @@
         "entity.other.attribute-name",
         "keyword.control",
         "keyword.other",
-        "keyword.operator.logical.python"
+        "keyword.operator.logical.python",
+        "keyword.operator.new.js"
       ],
       "settings": {
         "foreground": "#63B0FF"
@@ -417,7 +451,8 @@
         "variable.other.php",
         "string.unquoted.argument.shell",
         "punctuation.definition.variable.php",
-        "constant.other.option"
+        "constant.other.option",
+        "variable.language.this.php"
       ],
       "settings": {
         "foreground": "#81C8E1"
@@ -610,8 +645,20 @@
       }
     },
     {
+      "name": "Static declaration - TS",
+      "scope": ["meta.object-literal.key.ts entity.name.function.ts"],
+      "settings": {
+        "foreground": "#FF0000",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
       "name": "Decorator - Global",
-      "scope": ["meta.decorator entity.name.function"],
+      "scope": [
+        "meta.decorator entity.name.function",
+        "meta.decorator entity.name.function.ts",
+        "punctuation.decorator.ts"
+      ],
       "settings": {
         "foreground": "#81C8E1",
         "fontStyle": "italic bold"
@@ -838,7 +885,7 @@
       "scope": "constant.other.caps.rust",
       "settings": {
         "foreground": "#7ECC49",
-        "fontStyle": "bold"
+        "fontStyle": "italic bold underline"
       }
     },
     {
@@ -852,10 +899,9 @@
         "entity.name.type.trait.rust",
         "entity.name.type.declaration.rust",
         "entity.name.type.rust",
-        "entity.name.namespace.rust",
-        "entity.name.type.option.rust",
         "entity.name.type.primitive.rust",
-        "constant.language.bool.rust"
+        "constant.language.bool.rust",
+        "entity.name.function.macro.rust",
       ],
       "settings": {
         "foreground": "#DB5860"
@@ -898,7 +944,9 @@
         "entity.name.type.class.ts",
         "entity.name.type.ts",
         "entity.name.type.alias.ts",
-        "support.class.promise.ts"
+        "support.class.promise.ts",
+        "new.expr.ts entity.name.function.ts",
+        "variable.other.object.ts"
       ],
       "settings": {
         "foreground": "#DB5860"
@@ -942,17 +990,19 @@
     {
       "name": "Local variables - TS",
       "scope": [
-        "variable.other.constant.object.ts",
         "variable.other.readwrite.ts",
-        "variable.other.object.ts"
       ],
       "settings": {
-        "foreground": "#BF80D9"
+        "foreground": "#81C8E1"
       }
     },
     {
       "name": "Class TS",
-      "scope": ["variable.other.property.ts"],
+      "scope": [
+        "variable.other.property.ts",
+        "variable.object.property",
+        "meta.object-literal.key.ts"
+      ],
       "settings": {
         "foreground": "#99C0E8"
       }

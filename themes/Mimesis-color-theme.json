@@ -256,7 +256,9 @@
         "keyword.operator.type.annotation.ts",
         "keyword.operator.dereference.rust",
         "keyword.operator.borrow.and.rust",
-        "keyword.operator.question.rust"
+        "keyword.operator.question.rust",
+        "punctuation.definition.interface.begin.bracket.curly.php",
+        "punctuation.definition.interface.end.bracket.curly.php"
       ],
       "settings": {
         "foreground": "#b5007f"
@@ -374,13 +376,6 @@
       }
     },
     {
-      "name": "Class properties - PHP",
-      "scope": ["variable.other.property.php"],
-      "settings": {
-        "foreground": "#440071"
-      }
-    },
-    {
       "name": "Heredoc - PHP",
       "scope": ["keyword.operator.heredoc.php", "string.unquoted.heredoc.php"],
       "settings": {
@@ -398,7 +393,7 @@
     },
     {
       "name": "Variable class - PHP",
-      "scope": ["variable.other.class.php"],
+      "scope": ["variable.other.class.php", "variable.other.property.php"],
       "settings": {
         "foreground": "#032F62"
       }
@@ -447,14 +442,14 @@
         "meta.class.body.php meta.method-call.static.php entity.name.function"
       ],
       "settings": {
-        "foreground": "#006504"
+        "foreground": "#006504",
       }
     },
     {
       "name": "Functions type hinting - PHP",
       "scope": [
         "keyword meta.function.parameter.typehinted.php",
-        "keyword.other.type.php"
+        "support.function.math.php"
       ],
       "settings": {
         "foreground": "#D70022"
@@ -649,7 +644,7 @@
     },
     {
       "name": "Decorator - Global",
-      "scope": ["meta.decorator entity.name.function"],
+      "scope": ["meta.decorator entity.name.function","punctuation.decorator.ts"],
       "settings": {
         "foreground": "#005A71",
         "fontStyle": "italic bold"
@@ -700,7 +695,10 @@
     },
     {
       "name": "Decorator - JS",
-      "scope": ["meta.decorator.js","meta.decorator.js entity.name.function.js"],
+      "scope": [
+        "meta.decorator.js",
+        "meta.decorator.js entity.name.function.js"
+      ],
       "settings": {
         "foreground": "#005A71",
         "fontStyle": "italic bold"
