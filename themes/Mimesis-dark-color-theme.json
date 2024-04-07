@@ -897,7 +897,8 @@
         "entity.name.type.enum.ts",
         "entity.name.type.class.ts",
         "entity.name.type.ts",
-        "entity.name.type.alias.ts"
+        "entity.name.type.alias.ts",
+        "support.class.promise.ts"
       ],
       "settings": {
         "foreground": "#DB5860"
@@ -915,7 +916,8 @@
       "name": "Keyword - TS",
       "scope": [
         "keyword.operator.expression.typeof.ts",
-        "variable.language.this.ts"
+        "variable.language.this.ts",
+        "keyword.operator.new.ts"
       ],
       "settings": {
         "foreground": "#63B0FF"
