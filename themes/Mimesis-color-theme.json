@@ -389,7 +389,7 @@
       }
     },
     {
-      "name": "templated php test",
+      "name": "Embedded - PHP",
       "scope": ["meta.embedded.block.php constant.other.php"],
       "settings": {
         "foreground": "#0060DF",
@@ -699,6 +699,14 @@
       }
     },
     {
+      "name": "Decorator - JS",
+      "scope": ["meta.decorator.js","meta.decorator.js entity.name.function.js"],
+      "settings": {
+        "foreground": "#005A71",
+        "fontStyle": "italic bold"
+      }
+    },
+    {
       "name": "Paramaters - JS",
       "scope": [
         "variable.parameter.js",
@@ -958,7 +966,7 @@
         "entity.other.inherited-class.ts",
         "support.class.promise.ts",
         "meta.indexed-name.python",
-        "new.expr.ts entity.name.function.ts",
+        "new.expr.ts entity.name.function.ts"
       ],
       "settings": {
         "foreground": "#D70022"
